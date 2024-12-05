@@ -15,6 +15,12 @@ electron vue vite ssim.js 的快速实现demo
 
 ## 参照步骤快速执行
 
+base env
+
+node v22.11.0
+
+Python 3.12.7
+
 ```sh
 yarn
 ```
