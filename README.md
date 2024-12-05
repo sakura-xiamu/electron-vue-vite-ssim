@@ -13,16 +13,14 @@ electron vue vite ssim.js 的快速实现demo
 目的是功能实现，Java狗不会画页面，请体谅
 
 
-## Project Setup
+## 参照步骤快速执行
 
 ```sh
-npm install
+yarn
 ```
 
-### Compile and Hot-Reload for Development
-
 ```sh
-npm run start
+yarn start
 ```
 
 ### 感谢
