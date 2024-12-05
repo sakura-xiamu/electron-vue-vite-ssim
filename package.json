@@ -1,0 +1,49 @@
+{
+  "name": "electron-vue-vite-ssim",
+  "version": "0.0.1",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "vite --mode development"
+  },
+  "build": {
+    "appId": "com.your-app.id",
+    "productName": "Your App Name",
+    "directories": {
+      "output": "release/${version}"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    }
+  },
+  "dependencies": {
+    "sharp": "^0.33.5",
+    "sharp-phash": "^2.2.0",
+    "ssim.js": "^3.5.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "vite": "^6.0.1",
+    "vite-plugin-electron": "^0.29.0",
+    "vite-plugin-vue-devtools": "^7.6.5"
+  }
+}
