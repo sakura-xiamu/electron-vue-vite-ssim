@@ -16,7 +16,7 @@
         <img :src="imageUrl[1]" alt="" width="100" height="100">
       </figure>
     </div>
-    <input type="number" v-model.number="press" placeholder="图片压缩倍数"/>
+    图片压缩倍数：<input type="number" v-model.number="press" placeholder="图片压缩倍数"/>
     <button @click="diffImage">对比</button>
     <p>相似度是：
       <output>{{ output }}</output>
@@ -72,7 +72,9 @@ const compareImg = () => {
 
     const {mssim, performance} = ssim(image2data(inputImgs[0]), image2data(inputImgs[1]));
     // 显示对比结果
-    output.value = `${mssim} (${performance}ms)`;
+    output.value = `相似度：${mssim} (识别速度：${performance}ms)  比较width:${canvas.width}px  比较height:${canvas.height}px`;
+  } else {
+    alert("选择图片啊？草~凸(艹皿艹 )")
   }
 }
 
